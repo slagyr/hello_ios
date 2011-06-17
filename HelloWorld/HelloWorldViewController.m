@@ -10,9 +10,26 @@
 
 @implementation HelloWorldViewController
 
+@synthesize outletLabel;
+@synthesize textField;
+
 - (void)dealloc
 {
     [super dealloc];
+}
+
+- (IBAction) buttonPressed
+{
+    NSLog(@"button clicked");
+    id text = [textField text];
+    [outletLabel setText: [[@"Hello " stringByAppendingString: text] stringByAppendingString: @"!"]];
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)field
+{
+    [field resignFirstResponder];
+    
+    return YES;
 }
 
 - (void)didReceiveMemoryWarning
@@ -23,15 +40,6 @@
     // Release any cached data, images, etc that aren't in use.
 }
 
-#pragma mark - View lifecycle
-
-/*
-// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-}
-*/
 
 - (void)viewDidUnload
 {

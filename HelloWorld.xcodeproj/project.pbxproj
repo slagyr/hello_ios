@@ -16,6 +16,20 @@
 		C345BBF213ABD06100153405 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = C345BBF013ABD06100153405 /* MainWindow.xib */; };
 		C345BBF513ABD06100153405 /* HelloWorldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C345BBF413ABD06100153405 /* HelloWorldViewController.m */; };
 		C345BBF813ABD06100153405 /* HelloWorldViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C345BBF613ABD06100153405 /* HelloWorldViewController.xib */; };
+		C345BC1613ABDA5900153405 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C345BBDE13ABD06000153405 /* UIKit.framework */; };
+		C345BC1713ABDA5900153405 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C345BBE013ABD06000153405 /* Foundation.framework */; };
+		C345BC1813ABDA5900153405 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C345BBE213ABD06000153405 /* CoreGraphics.framework */; };
+		C345BC8813ABDCA400153405 /* OCDSpecDescription.m in Sources */ = {isa = PBXBuildFile; fileRef = C345BC7213ABDCA400153405 /* OCDSpecDescription.m */; };
+		C345BC8913ABDCA400153405 /* OCDSpecDescriptionRunner.m in Sources */ = {isa = PBXBuildFile; fileRef = C345BC7413ABDCA400153405 /* OCDSpecDescriptionRunner.m */; };
+		C345BC8A13ABDCA400153405 /* OCDSpecExample.m in Sources */ = {isa = PBXBuildFile; fileRef = C345BC7613ABDCA400153405 /* OCDSpecExample.m */; };
+		C345BC8B13ABDCA400153405 /* OCDSpecExpectation.m in Sources */ = {isa = PBXBuildFile; fileRef = C345BC7813ABDCA400153405 /* OCDSpecExpectation.m */; };
+		C345BC8C13ABDCA400153405 /* OCDSpecFail.m in Sources */ = {isa = PBXBuildFile; fileRef = C345BC7A13ABDCA400153405 /* OCDSpecFail.m */; };
+		C345BC8D13ABDCA400153405 /* OCDSpecOutputter+RedirectOutput.m in Sources */ = {isa = PBXBuildFile; fileRef = C345BC7C13ABDCA400153405 /* OCDSpecOutputter+RedirectOutput.m */; };
+		C345BC8E13ABDCA400153405 /* OCDSpecOutputter.m in Sources */ = {isa = PBXBuildFile; fileRef = C345BC7E13ABDCA400153405 /* OCDSpecOutputter.m */; };
+		C345BC8F13ABDCA400153405 /* OCDSpecSharedResults.m in Sources */ = {isa = PBXBuildFile; fileRef = C345BC8013ABDCA400153405 /* OCDSpecSharedResults.m */; };
+		C345BC9113ABDCA400153405 /* RunIPhoneUnitTest.sh in Resources */ = {isa = PBXBuildFile; fileRef = C345BC8313ABDCA400153405 /* RunIPhoneUnitTest.sh */; };
+		C345BC9213ABDCA400153405 /* unitTestMain.m in Sources */ = {isa = PBXBuildFile; fileRef = C345BC8413ABDCA400153405 /* unitTestMain.m */; };
+		C345BC9913ABDCC900153405 /* SpecsAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C345BC9813ABDCC900153405 /* SpecsAppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,16 +37,42 @@
 		C345BBDE13ABD06000153405 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C345BBE013ABD06000153405 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C345BBE213ABD06000153405 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		C345BBE613ABD06000153405 /* HelloWorld-Info.plist */ = {isa = PBXFileReference; path = "HelloWorld-Info.plist"; sourceTree = "<group>"; };
+		C345BBE613ABD06000153405 /* HelloWorld-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HelloWorld-Info.plist"; sourceTree = "<group>"; };
 		C345BBE813ABD06000153405 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		C345BBEA13ABD06000153405 /* HelloWorld-Prefix.pch */ = {isa = PBXFileReference; path = "HelloWorld-Prefix.pch"; sourceTree = "<group>"; };
+		C345BBEA13ABD06000153405 /* HelloWorld-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "HelloWorld-Prefix.pch"; sourceTree = "<group>"; };
 		C345BBEB13ABD06000153405 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C345BBED13ABD06000153405 /* HelloWorldAppDelegate.h */ = {isa = PBXFileReference; path = HelloWorldAppDelegate.h; sourceTree = "<group>"; };
+		C345BBED13ABD06000153405 /* HelloWorldAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorldAppDelegate.h; sourceTree = "<group>"; };
 		C345BBEE13ABD06000153405 /* HelloWorldAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldAppDelegate.m; sourceTree = "<group>"; };
 		C345BBF113ABD06100153405 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		C345BBF313ABD06100153405 /* HelloWorldViewController.h */ = {isa = PBXFileReference; path = HelloWorldViewController.h; sourceTree = "<group>"; };
+		C345BBF313ABD06100153405 /* HelloWorldViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorldViewController.h; sourceTree = "<group>"; };
 		C345BBF413ABD06100153405 /* HelloWorldViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldViewController.m; sourceTree = "<group>"; };
 		C345BBF713ABD06100153405 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/HelloWorldViewController.xib; sourceTree = "<group>"; };
+		C345BC1413ABDA5900153405 /* Specs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Specs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C345BC7013ABDCA400153405 /* OCDSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDSpec.h; sourceTree = "<group>"; };
+		C345BC7113ABDCA400153405 /* OCDSpecDescription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDSpecDescription.h; sourceTree = "<group>"; };
+		C345BC7213ABDCA400153405 /* OCDSpecDescription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDSpecDescription.m; sourceTree = "<group>"; };
+		C345BC7313ABDCA400153405 /* OCDSpecDescriptionRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDSpecDescriptionRunner.h; sourceTree = "<group>"; };
+		C345BC7413ABDCA400153405 /* OCDSpecDescriptionRunner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDSpecDescriptionRunner.m; sourceTree = "<group>"; };
+		C345BC7513ABDCA400153405 /* OCDSpecExample.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDSpecExample.h; sourceTree = "<group>"; };
+		C345BC7613ABDCA400153405 /* OCDSpecExample.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDSpecExample.m; sourceTree = "<group>"; };
+		C345BC7713ABDCA400153405 /* OCDSpecExpectation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDSpecExpectation.h; sourceTree = "<group>"; };
+		C345BC7813ABDCA400153405 /* OCDSpecExpectation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDSpecExpectation.m; sourceTree = "<group>"; };
+		C345BC7913ABDCA400153405 /* OCDSpecFail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDSpecFail.h; sourceTree = "<group>"; };
+		C345BC7A13ABDCA400153405 /* OCDSpecFail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDSpecFail.m; sourceTree = "<group>"; };
+		C345BC7B13ABDCA400153405 /* OCDSpecOutputter+RedirectOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "OCDSpecOutputter+RedirectOutput.h"; sourceTree = "<group>"; };
+		C345BC7C13ABDCA400153405 /* OCDSpecOutputter+RedirectOutput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "OCDSpecOutputter+RedirectOutput.m"; sourceTree = "<group>"; };
+		C345BC7D13ABDCA400153405 /* OCDSpecOutputter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDSpecOutputter.h; sourceTree = "<group>"; };
+		C345BC7E13ABDCA400153405 /* OCDSpecOutputter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDSpecOutputter.m; sourceTree = "<group>"; };
+		C345BC7F13ABDCA400153405 /* OCDSpecSharedResults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OCDSpecSharedResults.h; sourceTree = "<group>"; };
+		C345BC8013ABDCA400153405 /* OCDSpecSharedResults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OCDSpecSharedResults.m; sourceTree = "<group>"; };
+		C345BC8213ABDCA400153405 /* macMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = macMain.m; sourceTree = "<group>"; };
+		C345BC8313ABDCA400153405 /* RunIPhoneUnitTest.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = RunIPhoneUnitTest.sh; sourceTree = "<group>"; };
+		C345BC8413ABDCA400153405 /* unitTestMain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = unitTestMain.m; sourceTree = "<group>"; };
+		C345BC8613ABDCA400153405 /* DescriptionRunner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DescriptionRunner.h; sourceTree = "<group>"; };
+		C345BC8713ABDCA400153405 /* Example.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Example.h; sourceTree = "<group>"; };
+		C345BC9613ABDCC900153405 /* Specs-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Specs-Prefix.pch"; sourceTree = "<group>"; };
+		C345BC9713ABDCC900153405 /* SpecsAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpecsAppDelegate.h; sourceTree = "<group>"; };
+		C345BC9813ABDCC900153405 /* SpecsAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpecsAppDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,12 +86,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C345BC1113ABDA5900153405 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C345BC1613ABDA5900153405 /* UIKit.framework in Frameworks */,
+				C345BC1713ABDA5900153405 /* Foundation.framework in Frameworks */,
+				C345BC1813ABDA5900153405 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		C345BBCF13ABD06000153405 = {
 			isa = PBXGroup;
 			children = (
+				C345BC9313ABDCC900153405 /* Specs */,
+				C345BC6F13ABDCA400153405 /* OCDSpec */,
 				C345BBE413ABD06000153405 /* HelloWorld */,
 				C345BBDD13ABD06000153405 /* Frameworks */,
 				C345BBDB13ABD06000153405 /* Products */,
@@ -62,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				C345BBDA13ABD06000153405 /* HelloWorld.app */,
+				C345BC1413ABDA5900153405 /* Specs.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -101,6 +154,78 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		C345BC6F13ABDCA400153405 /* OCDSpec */ = {
+			isa = PBXGroup;
+			children = (
+				C345BC7013ABDCA400153405 /* OCDSpec.h */,
+				C345BC7113ABDCA400153405 /* OCDSpecDescription.h */,
+				C345BC7213ABDCA400153405 /* OCDSpecDescription.m */,
+				C345BC7313ABDCA400153405 /* OCDSpecDescriptionRunner.h */,
+				C345BC7413ABDCA400153405 /* OCDSpecDescriptionRunner.m */,
+				C345BC7513ABDCA400153405 /* OCDSpecExample.h */,
+				C345BC7613ABDCA400153405 /* OCDSpecExample.m */,
+				C345BC7713ABDCA400153405 /* OCDSpecExpectation.h */,
+				C345BC7813ABDCA400153405 /* OCDSpecExpectation.m */,
+				C345BC7913ABDCA400153405 /* OCDSpecFail.h */,
+				C345BC7A13ABDCA400153405 /* OCDSpecFail.m */,
+				C345BC7B13ABDCA400153405 /* OCDSpecOutputter+RedirectOutput.h */,
+				C345BC7C13ABDCA400153405 /* OCDSpecOutputter+RedirectOutput.m */,
+				C345BC7D13ABDCA400153405 /* OCDSpecOutputter.h */,
+				C345BC7E13ABDCA400153405 /* OCDSpecOutputter.m */,
+				C345BC7F13ABDCA400153405 /* OCDSpecSharedResults.h */,
+				C345BC8013ABDCA400153405 /* OCDSpecSharedResults.m */,
+				C345BC8113ABDCA400153405 /* Programs */,
+				C345BC8513ABDCA400153405 /* Protocols */,
+			);
+			name = OCDSpec;
+			path = OCDSpec/OCDSpec;
+			sourceTree = "<group>";
+		};
+		C345BC8113ABDCA400153405 /* Programs */ = {
+			isa = PBXGroup;
+			children = (
+				C345BC8213ABDCA400153405 /* macMain.m */,
+				C345BC8313ABDCA400153405 /* RunIPhoneUnitTest.sh */,
+				C345BC8413ABDCA400153405 /* unitTestMain.m */,
+			);
+			path = Programs;
+			sourceTree = "<group>";
+		};
+		C345BC8513ABDCA400153405 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				C345BC8613ABDCA400153405 /* DescriptionRunner.h */,
+				C345BC8713ABDCA400153405 /* Example.h */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		C345BC9313ABDCC900153405 /* Specs */ = {
+			isa = PBXGroup;
+			children = (
+				C345BC9413ABDCC900153405 /* iPad */,
+				C345BC9513ABDCC900153405 /* iPhone */,
+				C345BC9613ABDCC900153405 /* Specs-Prefix.pch */,
+				C345BC9713ABDCC900153405 /* SpecsAppDelegate.h */,
+				C345BC9813ABDCC900153405 /* SpecsAppDelegate.m */,
+			);
+			path = Specs;
+			sourceTree = "<group>";
+		};
+		C345BC9413ABDCC900153405 /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = iPad;
+			sourceTree = "<group>";
+		};
+		C345BC9513ABDCC900153405 /* iPhone */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = iPhone;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,6 +244,24 @@
 			name = HelloWorld;
 			productName = HelloWorld;
 			productReference = C345BBDA13ABD06000153405 /* HelloWorld.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C345BC1313ABDA5900153405 /* Specs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C345BC3513ABDA5900153405 /* Build configuration list for PBXNativeTarget "Specs" */;
+			buildPhases = (
+				C345BC1013ABDA5900153405 /* Sources */,
+				C345BC1113ABDA5900153405 /* Frameworks */,
+				C345BC1213ABDA5900153405 /* Resources */,
+				C345BC9A13ABDEC900153405 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Specs;
+			productName = Specs;
+			productReference = C345BC1413ABDA5900153405 /* Specs.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -142,6 +285,7 @@
 			projectRoot = "";
 			targets = (
 				C345BBD913ABD06000153405 /* HelloWorld */,
+				C345BC1313ABDA5900153405 /* Specs */,
 			);
 		};
 /* End PBXProject section */
@@ -157,7 +301,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		C345BC1213ABDA5900153405 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C345BC9113ABDCA400153405 /* RunIPhoneUnitTest.sh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		C345BC9A13ABDEC900153405 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = ./OCDSpec/OCDSpec/Programs/RunIPhoneUnitTest.sh;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C345BBD613ABD06000153405 /* Sources */ = {
@@ -167,6 +335,23 @@
 				C345BBEC13ABD06000153405 /* main.m in Sources */,
 				C345BBEF13ABD06000153405 /* HelloWorldAppDelegate.m in Sources */,
 				C345BBF513ABD06100153405 /* HelloWorldViewController.m in Sources */,
+				C345BC9913ABDCC900153405 /* SpecsAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C345BC1013ABDA5900153405 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C345BC8813ABDCA400153405 /* OCDSpecDescription.m in Sources */,
+				C345BC8913ABDCA400153405 /* OCDSpecDescriptionRunner.m in Sources */,
+				C345BC8A13ABDCA400153405 /* OCDSpecExample.m in Sources */,
+				C345BC8B13ABDCA400153405 /* OCDSpecExpectation.m in Sources */,
+				C345BC8C13ABDCA400153405 /* OCDSpecFail.m in Sources */,
+				C345BC8D13ABDCA400153405 /* OCDSpecOutputter+RedirectOutput.m in Sources */,
+				C345BC8E13ABDCA400153405 /* OCDSpecOutputter.m in Sources */,
+				C345BC8F13ABDCA400153405 /* OCDSpecSharedResults.m in Sources */,
+				C345BC9213ABDCA400153405 /* unitTestMain.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +445,40 @@
 			};
 			name = Release;
 		};
+		C345BC3313ABDA5900153405 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "${SDKROOT}/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h";
+				HEADER_SEARCH_PATHS = "${SRCROOT}/OCDSpec";
+				INFOPLIST_FILE = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C345BC3413ABDA5900153405 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "${SDKROOT}/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h";
+				HEADER_SEARCH_PATHS = "${SRCROOT}/OCDSpec";
+				INFOPLIST_FILE = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -277,6 +496,15 @@
 			buildConfigurations = (
 				C345BBFC13ABD06100153405 /* Debug */,
 				C345BBFD13ABD06100153405 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C345BC3513ABDA5900153405 /* Build configuration list for PBXNativeTarget "Specs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C345BC3313ABDA5900153405 /* Debug */,
+				C345BC3413ABDA5900153405 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

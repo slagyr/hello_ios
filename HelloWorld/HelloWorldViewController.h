@@ -8,8 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HelloWorldViewController : UIViewController {
-    
+@interface HelloWorldViewController : UIViewController <UITextFieldDelegate> {
+    UILabel* outletLabel; 
+    UITextField* textField; 
+
 }
+
+@property (nonatomic, retain) IBOutlet UILabel* outletLabel;
+@property (nonatomic, retain) IBOutlet UITextField* textField;
+
+- (IBAction) buttonPressed;
 
 @end
